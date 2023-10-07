@@ -34,8 +34,6 @@ class Complex
         cout << real << " + " << imag << "i " << endl;
     }
 
-
-
 };
 
 int main()
