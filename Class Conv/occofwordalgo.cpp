@@ -11,7 +11,7 @@ int main()
     
     int count = 1;
     int wc = 0;
-    bool check = false;
+    int check = 0;
 
     getline(cin,str);
 
@@ -38,13 +38,6 @@ int main()
         }
         
         temp = temp + str[i];
-    }
-
-    check = str.find(temp);
-
-    if(check)
-    {
-        wc++;
     }
 
     cout << temp << " " << wc << endl;
