@@ -9,9 +9,12 @@ bool ispallindrome(char s[],int length)
     char check[100];
     int count = 0;
 
+    int k = length-1;
+    
     for(int i=0 ; i<length ; i++)
-    {
-        check[i] = s[i];
+    {   
+        check[i] = s[k];
+        k--;
     }
 
     for(int i=0 ; i<length ; i++)
@@ -37,6 +40,13 @@ bool ispallindrome(char s[],int length)
 
 void reverse(char s[], int length)
 {
+    
+    cout << "Reversed String: ";
+    for(int i=length-1 ; i>=0 ; i--)
+    {
+        cout << s[i];
+    }
+    cout << endl;
 
 }
 
@@ -47,11 +57,22 @@ int main()
 
     cin.getline(str,sizeof(str));
 
-    for(int k=0 ; k<strlen(str) ; k++)
+    int length = strlen(str);
+
+    bool checker;
+
+    checker = ispallindrome(str,length);
+
+    if(checker)
     {
-        cout << str[k];
+        cout << "Entered String is a Palindrome." << endl;
     }
 
-    int length = strlen(str);
+    else
+    {
+        cout << "Entered String is not a Palindrome." << endl;
+    }
+
+    reverse(str,length);
 
 }
