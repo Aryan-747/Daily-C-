@@ -10,7 +10,7 @@ int main()
 
     int *ptr = NULL;
 
-    ptr = new int(n);
+    ptr = new int[n];
 
     for(int i=0 ; i<n ; i++)
     {
