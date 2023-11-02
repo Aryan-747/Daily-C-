@@ -4,23 +4,26 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int *ptr = new int[1000];
 
-    cin >> n;
+    int i=0;
 
-    int *ptr = NULL;
+    int test;
 
-    ptr = new int[10];
-
-    for(int i=0 ; i<n ; i++)
+    while(1)
     {
-        cin >> ptr[i];
+    cin >> test;
+    if(test<0)
+    {
+        break;
+    }
+    ptr[i] = test;
+    i++;
     }
 
-    cout << sizeof(ptr) << endl;
-    for(int i=0 ; i<n ; i++)
+    for(int k=0 ; k<i ; k++)
     {
-        cout << ptr[i] << " ";
+        cout << ptr[k] << " ";
     }
 
     cout << endl;
