@@ -1,6 +1,8 @@
 #include<iostream>
 #include<typeinfo>
 
+//Useful to check the version of C++ you are using.
+
 int main(){
 
 if(__cplusplus == 201703L) std::cout << "C++17\n";
