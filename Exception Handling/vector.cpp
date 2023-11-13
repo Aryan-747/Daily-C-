@@ -22,5 +22,13 @@ int main()
     cout << "Front: " << a1.front() << endl;
     cout << "Back: " << a1.back() << endl;
 
+    //Printing vector
+
+    cout << "Vector: ";
+    for(int i:a1)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
 
 }
